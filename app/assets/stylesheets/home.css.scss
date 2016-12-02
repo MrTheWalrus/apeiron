@@ -1,0 +1,57 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: black;
+  color: white;
+}
+
+
+h1 {
+  font-family: "Lucida Grande", serif;
+  font-size: 20px;
+}
+
+div.visual-interface {
+  height: 50vh;
+  div.visual {
+    display: none;
+  }
+}
+
+div.text-interface {
+  height: 40vh;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+ul.log {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+  span.good {
+    font-weight: bold;
+    color: #76EE00;
+  }
+  span.warn {
+    font-weight: bold;
+    color: #FFE303;
+  }
+  span.bad {
+    font-weight: bold;
+    color: #FF3D0D;
+  }
+  li:before { 
+      content: "";
+      border-color: transparent #555;
+      border-style: solid;
+      border-width: 0.35em 0 0.35em 0.45em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1em;
+      top: 0.9em;
+      position: relative;
+  }
+}
