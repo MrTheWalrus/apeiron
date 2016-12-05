@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 5, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+body {
+  background-color: black;
+  color: white;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+/* line 13, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+h1 {
+  font-family: "Lucida Grande", serif;
+  font-size: 20px;
+}
+
+/* line 18, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+h2 {
+  font-family: "Lucida Grande", serif;
+  font-size: 16px;
+}
+
+/* line 23, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+div.visual-interface {
+  height: 50vh;
+}
+/* line 25, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+div.visual-interface div.visual {
+  display: none;
+}
+/* line 28, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+div.visual-interface .center {
+  text-align: center;
+}
+
+/* line 33, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+div.text-interface {
+  height: 40vh;
+}
+
+/* line 37, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+/* line 41, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log span.good {
+  font-weight: bold;
+  color: #76EE00;
+}
+/* line 45, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log span.key {
+  font-weight: bold;
+  color: #00FFAA;
+}
+/* line 49, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log span.warn {
+  font-weight: bold;
+  color: #FFE303;
+}
+/* line 53, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log span.bad {
+  font-weight: bold;
+  color: #FF3D0D;
+}
+/* line 57, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log span.heading {
+  font-weight: bold;
+}
+/* line 61, /Users/imclean/Sites/apeiron/app/assets/stylesheets/home.css.scss */
+ul.log li:before {
+  content: "";
+  border-color: transparent #555;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+/* line 5, /Users/imclean/Sites/apeiron/app/assets/stylesheets/systems.css.scss */
+div.pane {
+  float: left;
+}
