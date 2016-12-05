@@ -5,6 +5,8 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
 }
 
 
@@ -13,17 +15,23 @@ h1 {
   font-size: 20px;
 }
 
+h2 {
+  font-family: "Lucida Grande", serif;
+  font-size: 16px;
+}
+
 div.visual-interface {
   height: 50vh;
   div.visual {
     display: none;
   }
+  .center {
+    text-align: center;
+  }
 }
 
 div.text-interface {
   height: 40vh;
-  font-family: "Courier New", monospace;
-  font-size: 12px;
 }
 
 ul.log {
@@ -34,6 +42,10 @@ ul.log {
     font-weight: bold;
     color: #76EE00;
   }
+  span.key {
+    font-weight: bold;
+    color: #00FFAA;
+  }
   span.warn {
     font-weight: bold;
     color: #FFE303;
@@ -42,6 +54,10 @@ ul.log {
     font-weight: bold;
     color: #FF3D0D;
   }
+  span.heading {
+    font-weight: bold;
+  }
+
   li:before { 
       content: "";
       border-color: transparent #555;

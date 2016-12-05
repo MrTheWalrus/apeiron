@@ -1,5 +1,3 @@
-var Apeiron = {};
-
 (function() {
 
   "use strict";
@@ -16,6 +14,19 @@ var Apeiron = {};
     initVars();
     setStatus('offline', 'System Offline. Press any key to begin boot sequence.');
     $(document).keydown(keyHandler);
+  }
+
+  // TODO: Maybe deduplicate these.
+  self.logLine = function(line){
+    logLine(line);
+  }
+
+  self.logLines = function(lines){
+    logLines(lines);
+  }
+
+  self.setStatus = function(st, message){
+    setStatus(st, message);
   }
 
   // TODO: Someday maybe the text doesn't live here? 
@@ -52,18 +63,22 @@ var Apeiron = {};
       [' + - - lib_ancient_base_v0.9.13', 800],
       [' + - - lib_stargate_v0.8.4', 750],
       [' + lib_systems_gui_0.6.3', 300],
-      ['Library build successful.', 250],
+      ['Library build successful. 2 items, 4 dependencies.', 250],
       ['Sending Apeiron systems handshake, ID '+sessionId, 1000],
       ['Session '+sessionId+' confirmed. Interlink ready.', 600],
-      ['Initializing Graphical Interface...', 600]
+      ["[<span class='key'>ESC</span>] to shut down.", 5],
+      ['Initializing Visual Interface...', 600]
     ]);
     setStatus('booting', "Beginning system boot.")
     logLines(bootLines);
-    $log.one('finished', initGUI);
+    $log.one('finished', function(){
+      setStatus('running', "System Online. Session ID:"+sessionId+". Interlink Active.");
+      displaySystems();
+    });
   };
 
   function shutDown(){
-    $visual.fadeOut('fast', function(){
+    $visual.fadeOut('slow', function(){
       $visual.html('');
     });
     setStatus('shutdown', "Shutting Down");
@@ -77,28 +92,76 @@ var Apeiron = {};
     })
   }
 
-  function initGUI(){
-    setStatus('running', "System Online. Session ID:"+sessionId+". Interlink Active.");
+  function displaySystems(){
     // TODO: Actual visual content?
     $visual.html("<p>Look, if wishes were horses we'd all be eating steak.</p><p>There's nothing here.</p>");
-    $visual.fadeIn();
+    $visual.load('/systems/overview', function(){
+      setStatus('systems');
+    });
+    $visual.fadeIn('slow');
+
   }
 
+  // TODO: Figure out structure for subclass key handlers
   function keyHandler(event){
-    console.log(event.which);
+    console.log(status + ' ' + event.which);
     if(status === 'offline'){
       bootUp();
     }
-    if(status === 'running'){
-      if(event.which === 27){
-        shutDown();
+    if(status === 'booting'){
+      // debug
+      if(event.which === 13){
+        setVisual('systems/overview');
+        $log.trigger('finished');
+      }
+    }
+    if(status === 'systems'){
+      switch(event.which){
+        case 27: //ESC
+          shutDown();
+          break;
+        case 80: //P
+          setVisual('systems/power');
+          break;
+        case 83: //S
+          setVisual('systems/structural');
+          break;
+        case 73: //I
+          setVisual('systems/information');
+          break;
+        case 68: //D
+          setVisual('systems/defensive');
+          break;
+        case 69: //E
+          setVisual('systems/environmental');
+          break;
+        case 79: //O
+          setVisual('systems/offensive');
+          break;
+        case 84: //T
+          setVisual('systems/transit');
+          break;
+        case 13: //enter
+          setVisual('systems/overview');
       }
     }
   }
 
+  function setVisual(path){
+    setStatus('loading');
+    $visual.fadeOut('fast', 'swing', function(){
+      $visual.load(path, function(){
+        $visual.fadeIn();
+      });
+    });
+  }
+
   function setStatus(code, message){
+    console.log(code);
     status = code;
-    $('.status').text(message);
+    if(message){
+      $('.status').text(message);
+    }
   }
 
   function initVars(){
@@ -117,9 +180,12 @@ var Apeiron = {};
     var elapsed = 0;
     $.each(lines, function(index, line){
       setTimeout(function(){logLine(line[0])}, elapsed);
-      elapsed += line[1];
+      if($.isNumeric(elapsed)){elapsed += line[1]}; //Protect from NaN
     });
-    setTimeout(function(){$log.trigger('finished')}, elapsed);
+    setTimeout(function(){
+      console.log('log finished '+elapsed);
+      $log.trigger('finished');
+    }, elapsed);
   }
 
 

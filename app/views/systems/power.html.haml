@@ -1,0 +1,14 @@
+%h2 Power Systems
+%div.pane
+  =image_tag('nexus.png', width: 200)
+  %p.center
+    %i Potentia
+    Nexus
+%div.pane
+  =image_tag('power_area.png', width: 400)
+  %p.center Powered Area
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.Systems.power.onDocumentReady();
+  });
