@@ -1,4 +1,6 @@
 Apeiron::Application.routes.draw do
+  resources :projects
+
   get "systems/overview"
   get "systems/power"
   get "systems/structural"

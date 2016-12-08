@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  proposer: MyText
+  description: MyText
+  resources: MyText
+  approved_at: 2016-12-08 01:46:21
+  status: MyString
+  text: MyString
+
+two:
+  name: MyText
+  proposer: MyText
+  description: MyText
+  resources: MyText
+  approved_at: 2016-12-08 01:46:21
+  status: MyString
+  text: MyString
