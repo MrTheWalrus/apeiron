@@ -31,7 +31,7 @@
   }
 
   function startInterlink(){
-    setStatus('loading', 'Initialzing Apeiron Systems Interlink')
+    setStatus('loading', 'Initializing Apeiron Systems Interlink')
     sessionId = Math.random().toString(16).substring(2,14).toUpperCase();
 
     var interlinkLines = [
@@ -99,7 +99,7 @@
     var menuLines = [
       ["<span class='heading'>Main System Menu</span>", 300],
       ["[<span class='key'>ESC</span>]: Shut down system", 100],
-      ["[<span class='key'>1</span>]: View Projects", 100]
+      ["[<span class='key'>1</span>]: Project Tracking", 100]
     ];
     if(interlinkActive){
       menuLines.push(["[<span class='key'>2</span>]: Apeiron Systems Interface", 5]);
@@ -109,9 +109,9 @@
     logLines(menuLines);
     $log.one('finished', function(){
       if(interlinkActive){
-        setStatus('main menu', "System Running. Interlink active, session ID "+sessionId+". Awaiting selection.");
+        setStatus('main menu', "System Running. Interlink active, session ID "+sessionId+".");
       }else{
-        setStatus('main menu', "System Running. Interlink offline. Awaiting selection.");
+        setStatus('main menu', "System Running. Interlink offline.");
       }
     })
   }
@@ -126,6 +126,7 @@
     ]
     if(interlinkActive){
       shutdownLines.push(["Deactivating Interlink", 1000]);
+      interlinkActive = false;
     }
     shutdownLines.push(['Shutdown complete. Goodbye...', 750]);
 
@@ -155,7 +156,8 @@
           shutDown();
           break;
         case 49: //1
-          logLine('Sorry, project view is not yet implemented. Please make another selection.');
+          logLine('Loading projects GUI...');
+          setVisual('/projects');
           break;
         case 50: //2
           if(interlinkActive){
@@ -199,7 +201,20 @@
           break;
         case 13: //enter
           setVisual('systems/overview');
+          break;
       }
+    }
+    if(status === 'projects'){
+      switch(event.which){
+        case 27: //Esc
+          $visual.fadeOut('slow', function(){
+            // TODO: Image tag it.
+            $visual.html('<img alt="Sgc logo" height="300" src="/assets/sgc_logo.png">');
+            $visual.fadeIn('slow');
+          });
+          displayMenu();
+          break;
+      }      
     }
   }
 

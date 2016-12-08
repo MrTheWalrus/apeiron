@@ -1,4 +1,28 @@
 %h2 Environmental Systems
+%div.pane 
+  =image_tag('tubes.png', width: 500)
+  %p.center 
+    Core Tramways:
+    %span.good Powered
+    %span.offline Unpowered
+%div
+  %p Atmosphere Content Report
+  %ul.plain
+    %li
+      Nitrogen:
+      %span.good.indent 78.0%
+    %li
+      Oxygen:
+      %span.good.indent 20.1%
+    %li
+      Noble Gasses:
+      %span.good.indent 0.82%
+    %li
+      Carbon Dioxide:
+      %span.good.indent 0.05%
+    %li
+      Humidity:
+      %span.good.indent 3.1%
 
 :javascript
   $(document).ready(function() {

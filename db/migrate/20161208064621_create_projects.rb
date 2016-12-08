@@ -7,8 +7,7 @@ class CreateProjects < ActiveRecord::Migration
       t.text :resources
       t.datetime :approved_at
       t.string :status
-      t.string :text
-
+      
       t.timestamps
     end
   end
