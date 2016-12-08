@@ -6,6 +6,7 @@
   self.onDocumentReady = function(){
     // TODO: Formatting for reports, align values?
     Apeiron.home.logLines([
+      ["<span class='heading'>Power System Registry</span>", 100],
       ["System Registry 0: <i>Potentia</i> Nexus - Primary Power", 100],
       [" - Crystal Status: <span class='good'>1</span> <span class='bad'>2</span> <span class='bad'>3</span> <span class='bad'>4</span> <span class='good'>5</span> <span class='bad'>6</span>", 500],
       [" - Two (2) Crystals Active and Aligned. Power Generation: <span class='warn'>~1.85%</span> standard operating capacity.", 500],

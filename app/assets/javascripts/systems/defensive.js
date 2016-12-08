@@ -5,6 +5,7 @@
 
   self.onDocumentReady = function(){
     Apeiron.home.logLines([
+      ["<span class='heading'>Defensive System Registry</span>", 100],
       ["System Registry 0: Shields", 100],
       [" - Shield Region 1: <span class='bad report-status'>Offline - Insufficient Power</span>", 100],
       [" - Shield Region 2: <span class='bad report-status'>Offline - Insufficient Power</span>", 100],

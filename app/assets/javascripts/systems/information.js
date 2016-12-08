@@ -5,6 +5,7 @@
 
   self.onDocumentReady = function(){
     Apeiron.home.logLines([
+      ["<span class='heading'>Info/Comm Systems Report</span>", 100],
       ["Primary Shipboard AI: <span class='bad'>Offline - Power conservation mode</span>", 100],
       ["Emergency Shipboard AI: <span class='warn'>Online - Minor damage to memory banks detected</span>", 100],
       ["Deep Memory Conduits: <span class='bad'>Offline - Insufficient power</span>", 100],

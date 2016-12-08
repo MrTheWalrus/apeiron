@@ -1,0 +1,37 @@
+%div.projects-container
+  %div.resources
+    %h2 Resource Stockpile
+    %p Click resource for details.
+    - @resources.each do |res|
+      %span.res{data: {description: res.description.html_safe}}
+        = "#{res.name}: #{res.quantity}#{res.unit}".html_safe
+    %div.res-desc
+    / TODO: Add the ability to hide the description.
+  %div.projects-div
+    %h2 Projects
+    %p Click to expand.
+    %ul.project-list
+      - @projects.each do |project|
+        %li.project-item
+          %span.heading
+            = project.name
+          - if project.status == 'complete'
+            %span.status.complete
+              Completed
+          - if project.status == 'approved'
+            %span.status.approved
+              = "Approved #{time_ago_in_words(project.approved_at)}"
+          - if project.status == 'pending'
+            %span.status.pending
+              Pending Approval
+          %div.project-expand.hidden
+            %div.proposed
+              %span.heading 
+                Project proposal by 
+                =project.proposer
+            = project.description.html_safe
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.projects.onDocumentReady();
+  });

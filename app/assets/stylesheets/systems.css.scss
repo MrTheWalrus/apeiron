@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.pane {
-  float: left;
+div {
+  span.good {
+    font-weight: bold;
+    color: #76EE00;
+  }
+  span.offline {
+    font-weight: bold;
+    color: #ddd;
+  }
+  span.heading {
+    font-weight: bold;
+  }
+  .pane {
+    float: left;
+    padding-right: 10px;
+  }
+  ul.plain {
+    list-style: none;
+  }
 }

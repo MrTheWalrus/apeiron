@@ -5,6 +5,7 @@
 
   self.onDocumentReady = function(){
     Apeiron.home.logLines([
+      ["<span class='heading'>Offensive System Registry</span>", 100],
       ["System Registry 0: <i>Apis</i>", 500],
       [" - Launcher Bank Alpha:&nbsp;&nbsp;&nbsp;<span class='good report-status'>Online</span> &nbsp;Launchers loaded: <span class='bad'>0/5</span> &nbsp;Ammunition reserve: <span class='bad'>0</span>", 100],
       [" - Launcher Bank Beta:&nbsp&nbsp&nbsp&nbsp<span class='good report-status'>Online</span> &nbsp;Launchers loaded: <span class='bad'>0/5</span> &nbsp;Ammunition reserve: <span class='bad'>0</span>", 100],

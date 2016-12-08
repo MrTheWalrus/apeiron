@@ -5,6 +5,7 @@
 
   self.onDocumentReady = function(){
     Apeiron.home.logLines([
+      ["<span class='heading'>Transit System Registry</span>", 100],
       ["System Registry 0: Sublight Engines", 200],
       [" - Drive Status: <span class='bad'>Offline - Security Interlock Enabled - Hull integrity compromised.</span>", 200],
       ["System Registry 1: Hyperdrive", 200],

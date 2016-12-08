@@ -17,7 +17,7 @@
       ["[<span class='key'>O</span>]ffensive Subsystems", 100],
       ["[<span class='key'>E</span>]nvironmental Status", 100],
       ["[<span class='key'>T</span>]ransit Subsystems", 100],
-      ["Press [<span class='key'>Enter</span>] at any time to return to overview.", 150]
+      ["Press [<span class='key'>Enter</span>] at any time to return to overview, or [<span class='key'>ESC</span>] to exit.", 150]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');
