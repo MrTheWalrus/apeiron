@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 div.projects-container {
-  height: 300px;
+  height: 350px;
   overflow-y: scroll;
 
   span.res {
@@ -27,7 +27,15 @@ div.projects-container {
     display: none;
   }
 
+  li.project-item {
+    cursor: pointer;
+    padding: 3px;
+    margin: 5px;
+    border: solid 1px white;
+  }
+
   span.status {
+    float:right;
     font-weight: bold;
   }
   span.complete {
@@ -41,5 +49,8 @@ div.projects-container {
   }
   span.failed {
     color: #FF3D0D;
+  }
+  span.heading {
+    font-weight: bold;
   }
 }

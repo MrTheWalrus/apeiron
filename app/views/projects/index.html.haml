@@ -9,10 +9,12 @@
     / TODO: Add the ability to hide the description.
   %div.projects-div
     %h2 Projects
+    %p Click to expand.
     %ul.project-list
       - @projects.each do |project|
-        %li 
-          = project.name
+        %li.project-item
+          %span.heading
+            = project.name
           - if project.status == 'complete'
             %span.status.complete
               Completed
@@ -22,6 +24,12 @@
           - if project.status == 'pending'
             %span.status.pending
               Pending Approval
+          %div.project-expand.hidden
+            %div.proposed
+              %span.heading 
+                Project proposal by 
+                =project.proposer
+            = project.description.html_safe
 
 :javascript
   $(document).ready(function() {
