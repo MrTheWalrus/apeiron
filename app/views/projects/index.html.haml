@@ -20,7 +20,7 @@
               Completed
           - if project.status == 'approved'
             %span.status.approved
-              = "Approved #{time_ago_in_words(project.approved_at)}"
+              = "Approved #{time_ago_in_words(project.approved_at)} ago."
           - if project.status == 'pending'
             %span.status.pending
               Pending Approval
