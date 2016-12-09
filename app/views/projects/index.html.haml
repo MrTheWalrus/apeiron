@@ -20,7 +20,7 @@
               Completed
           - if project.status == 'approved'
             %span.status.approved
-              = "Approved #{time_ago_in_words(project.approved_at)}"
+              = "Approved #{time_ago_in_words(project.approved_at)} ago."
           - if project.status == 'pending'
             %span.status.pending
               Pending Approval
@@ -28,8 +28,12 @@
             %div.proposed
               %span.heading 
                 Project proposal by 
-                =project.proposer
+              =project.proposer
             = project.description.html_safe
+            %div.project-resources
+              %span.heading 
+                Resources Required: 
+              = project.resources
 
 :javascript
   $(document).ready(function() {

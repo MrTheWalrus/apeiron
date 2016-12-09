@@ -1,0 +1,29 @@
+%div.intel-container
+  %h2 Force Strength Report
+  %p Refer to OSI documentation for details of ACU calculation.
+  %table
+    %thead
+      %tr
+        %th Faction
+        %th Fleet Strength Estimate (ACU)
+        %th Territory Estimate (systems)
+        %th Notes
+    %tbody
+      - @factions.each do |faction|
+        %tr
+          %td= faction.name
+          %td.number= faction.fleet
+          %td.number= faction.territory
+          %td= faction.notes.html_safe
+  %h2 Enemy Action Report
+  - if @events.empty?
+    %p We have no reports available on enemy action.
+  - @events.each do |event|
+    %div.dark-event
+      = event.name
+      %div.event-desc
+        = event.description.html_safe
+:javascript
+  $(document).ready(function() {
+    Apeiron.intel.onDocumentReady();
+  });
