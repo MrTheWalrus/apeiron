@@ -99,12 +99,13 @@
     var menuLines = [
       ["<span class='heading'>Main System Menu</span>", 300],
       ["[<span class='key'>ESC</span>]: Shut down system", 100],
-      ["[<span class='key'>1</span>]: Project Tracking", 100]
+      ["[<span class='key'>1</span>]: Project Tracking", 100],
+      ["[<span class='key'>2</span>]: Intel Report", 100]
     ];
     if(interlinkActive){
-      menuLines.push(["[<span class='key'>2</span>]: Apeiron Systems Interface", 5]);
+      menuLines.push(["[<span class='key'>3</span>]: Apeiron Systems Interface", 5]);
     }else{
-      menuLines.push(["[<span class='key'>2</span>]: Initiate Apeiron Interlink", 5]);
+      menuLines.push(["[<span class='key'>3</span>]: Initiate Apeiron Interlink", 5]);
     }
     logLines(menuLines);
     $log.one('finished', function(){
@@ -159,12 +160,15 @@
           logLine('Loading projects GUI...');
           setVisual('/projects');
           break;
-        case 50: //2
+        case 51: //3
           if(interlinkActive){
             displaySystems();
           }else{
             startInterlink();
           }
+          break;
+        case 50: //2
+          logLine('Intel report not yet implemented.');
           break;
       }
     }

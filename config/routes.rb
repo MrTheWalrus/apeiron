@@ -1,4 +1,5 @@
 Apeiron::Application.routes.draw do
+  get "intel/home"
   resources :projects
 
   get "systems/overview"
