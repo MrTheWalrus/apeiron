@@ -31,11 +31,11 @@
   }
 
   function startInterlink(){
-    setStatus('loading', 'Initializing Apeiron Systems Interlink')
+    setStatus('loading', 'Initializing <i>Apeiron</i> Systems Interlink')
     sessionId = Math.random().toString(16).substring(2,14).toUpperCase();
 
     var interlinkLines = [
-      ['Establishing interlink with Apeiron core systems.', 500],
+      ['Establishing interlink with <i>Apeiron</i> core systems.', 500],
       ['Output device: Mk5 Optical Interface Crystal: <span class="good">OK</span>', 250]
     ]
     // Half of the time, there's a problem with the OIC config and it needs to be rebuilt
@@ -62,14 +62,14 @@
       [' + - - lib_stargate_v0.8.4', 750],
       [' + lib_systems_gui_0.6.3', 300],
       ['Library build successful. 2 items, 4 dependencies.', 250],
-      ['Sending Apeiron systems handshake, ID '+sessionId, 1000],
+      ['Sending <i>Apeiron</i> systems handshake, ID '+sessionId, 1000],
       ['Session '+sessionId+' confirmed. Interlink ready.', 600],
       ['Initializing Ship System Visual Interface...', 600]
     ]);
     logLines(interlinkLines);
     $log.one('finished', function(){
       interlinkActive = true;
-      setStatus('running', "System Running. Interlink active, session ID "+sessionId);
+      setStatus('running', "System Running. <i>Apeiron</i> Interlink active, session ID "+sessionId);
       displaySystems();
     })
   }
@@ -77,7 +77,7 @@
   // TODO: Someday maybe the text doesn't live here? 
   function bootUp(){
     var bootLines = [
-      ['SGCOS Modular BIOS Rev. 0103-Omega (c)2003 USAF', 1000],
+      ['SGCOS Modular BIOS Rev. 0104-Omega (c)2003 USAF', 1000],
       ['Testing System Memory: <span class=good>256000000 bytes OK</span>', 100],
       ['Memory Clock: <span class=good>266 MHz Tcl:5 Tcrd:7 Trp:7</span>', 300],
       ['Running Security Self-Check', 1900],
@@ -85,7 +85,7 @@
       ['Local Storage: <span class=good>SATA 1: ATAP1 iHAS160</span>', 200],
       ['Input device: Keyboard: <span class="good">OK</span>', 250],
       ['Input device: Pointer: <span class="good">OK</span>', 250],
-      ['Apeiron Interlink: <span class="bad">Offline</span>', 250],
+      ['<i>Apeiron</i> Interlink: <span class="bad">Offline</span>', 250],
     ];
     $visual.fadeIn(2000);
     setStatus('booting', "Beginning system boot.");
@@ -103,16 +103,16 @@
       ["[<span class='key'>2</span>]: Intel Report", 100]
     ];
     if(interlinkActive){
-      menuLines.push(["[<span class='key'>3</span>]: Apeiron Systems Interface", 5]);
+      menuLines.push(["[<span class='key'>3</span>]: <i>Apeiron</i> Systems Interface", 5]);
     }else{
-      menuLines.push(["[<span class='key'>3</span>]: Initiate Apeiron Interlink", 5]);
+      menuLines.push(["[<span class='key'>3</span>]: Initiate <i>Apeiron</i> Interlink", 5]);
     }
     logLines(menuLines);
     $log.one('finished', function(){
       if(interlinkActive){
-        setStatus('main menu', "System Running. Interlink active, session ID "+sessionId+".");
+        setStatus('main menu', "System Running. <i>Apeiron</i> Interlink active, session ID "+sessionId+".");
       }else{
-        setStatus('main menu', "System Running. Interlink offline.");
+        setStatus('main menu', "System Running. <i>Apeiron</i> Interlink offline.");
       }
     })
   }
@@ -255,7 +255,7 @@
     console.log(code);
     status = code;
     if(message){
-      $('.status').text(message);
+      $('.status').html(message);
     }
   }
 

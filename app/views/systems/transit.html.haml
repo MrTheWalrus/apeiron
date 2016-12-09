@@ -1,4 +1,17 @@
 %h2 Transit Systems
+%div
+  = image_tag('drives.png', height: 175)
+%div
+  %ul.drive-config
+    %li
+      %span.heading.underline
+        Hyperdrive Configuration Data
+    - @drive_config.each do |item, value|
+      %li
+        %span.heading
+          =item.html_safe
+        = value.html_safe
+
 
 :javascript
   $(document).ready(function() {
