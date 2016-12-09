@@ -30,6 +30,10 @@
                 Project proposal by 
                 =project.proposer
             = project.description.html_safe
+            %div.project-resources
+              %span.heading
+                Resources required:
+                =project.resources
 
 :javascript
   $(document).ready(function() {
