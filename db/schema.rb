@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20161209042722) do
     t.text     "resources"
     t.datetime "approved_at"
     t.string   "status"
-    t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

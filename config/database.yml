@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: dmstaffing_development
+  database: apeiron_development
   pool: 5
 
 
@@ -11,12 +11,12 @@ development:
 test: &test
   adapter: postgresql
   encoding: unicode
-  database: dmstaffing_test
+  database: apeiron_test
   min_messages: WARNING # http://strd6.com/2010/09/suppressing-notice-create-table-primary-key-will-create-implicit-index-when-running-rake-test-with-postgres-db/
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: dmstaffing_production
+  database: apeiron_production
   pool: 5
