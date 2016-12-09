@@ -1,6 +1,7 @@
 Apeiron::Application.routes.draw do
-  get "intel/home"
   resources :projects
+
+  get "intel/home"
 
   get "systems/overview"
   get "systems/power"

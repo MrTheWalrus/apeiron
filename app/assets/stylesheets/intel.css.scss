@@ -9,6 +9,12 @@ div.intel-container {
   margin: 1px;
   border: solid 1px white;
 
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    border-top: dashed 1px white;
+  }
   td.number {
     text-align: center;
   }

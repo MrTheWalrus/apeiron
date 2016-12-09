@@ -118,6 +118,7 @@
   }
 
   function shutDown(){
+    console.log('what');
     $visual.fadeOut('slow', function(){
       $visual.html('');
     });
@@ -160,16 +161,16 @@
           logLine('Loading projects GUI...');
           setVisual('/projects');
           break;
+        case 50: //2
+          logLine('Loading Intel Report...');
+          setVisual('/intel/home');
+          break;
         case 51: //3
           if(interlinkActive){
             displaySystems();
           }else{
             startInterlink();
           }
-          break;
-        case 50: //2
-          logLine('Loading Intel Report...');
-          setVisual('intel/home');
           break;
       }
     }
