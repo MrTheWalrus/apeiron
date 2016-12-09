@@ -1,3 +1,22 @@
 %div.intel-container
   %h2 Force Strength Report
-    
+  %p Refer to OSI documentation for details of ACU calculation.
+  %table
+    %thead
+      %tr
+        %th Faction
+        %th Fleet Strength Estimate (ACU)
+        %th Territory Estimate (systems)
+        %th Notes
+    %tbody
+      - @factions.each do |faction|
+        %tr
+          %td= faction.name
+          %td.number= faction.fleet
+          %td.number= faction.territory
+          %td= faction.notes.html_safe
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.intel.onDocumentReady();
+  });

@@ -57,3 +57,26 @@ end
   r = Project.find_or_create_by_name(attrs[:name])
   r.update(attrs)
 end
+
+
+[
+  {name: "Anubis & Underlings", fleet: '900', territory: '35*',
+    notes: "The largest single force of of Anubis forces is commanded by his lieutenant, Zipacna. OSI notes high uncertainty in these estimates due to the difficulty of maintaining agents among the forces of Anubis."},
+  {name: "Yu and Allies", fleet: '725', territory: '63',
+    notes: "Includes the forces of Yu, Amaterasu, and Bastet. It is believed that the primary strategic commander is Yu's First Prime, Oshu. High confidence in territorial claims due to ongoing diplomatic relations."},
+  {name: "Ba'al", fleet: '470', territory: '28',
+    notes: "Ba'al commands the largest force not currently committed to the ongoing conflict. So far, Ba'al appears to be hanging back and avoiding conflict. His motives, as always, are unclear."},
+  {name: "Kali", fleet: '85', territory: '3',
+    notes: "OSI predicts that Kali will shortly follow the example of Bastet and ally with Lord Yu."},
+  {name: "Olokun/Svarog", fleet: '0', territory: '0*',
+    notes: "Both of the Goa'uld have been effectively wiped out by Anubis. They are personally unaccounted for, and may be dead or in the service of Anubis. In any case, neither retains any significant military strength or territory."},
+  {name: "Morrigan", fleet: '65', territory: '4',
+    notes: ""},
+  {name: "'Free' Jaffa", fleet: '3', territory: '1*',
+    notes: "The Jaffa rebellion is small and has limited organization. They do, however, have a handful of captured death gliders and single partially-demilitarized <i>Al'kesh</i>. They currently share space at the SGC Alpha Site."},
+  {name: "Earth/SGC", fleet: '2', territory: '3*',
+    notes: "Salvaged gliders from various sources, including the <i>Dread Crocodile</i>. Includes the first squad of <i>Project Antaeus</i> prototypes, projected to be in service in ~6 weeks. <i>Project Prometheus</i> (being on indefinite hold), and Omega Base resources (inoperative and inestimable) are not included. System count excludes bases not reported to Yu’s Alliance."},
+].each do |attrs|
+  r = Faction.find_or_create_by_name(attrs[:name])
+  r.update(attrs)
+end

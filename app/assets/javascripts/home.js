@@ -168,10 +168,12 @@
           }
           break;
         case 50: //2
-          logLine('Intel report not yet implemented.');
+          logLine('Loading Intel Report...');
+          setVisual('intel/home');
           break;
       }
     }
+    // TODO: Move this to systems.js somehow
     if(status === 'systems'){
       switch(event.which){
         case 27: //Esc
@@ -208,6 +210,8 @@
           break;
       }
     }
+
+    // TODO: Move to projects.js
     if(status === 'projects'){
       switch(event.which){
         case 27: //Esc
@@ -220,6 +224,21 @@
           break;
       }      
     }
+
+    // TODO: Move to intel.js
+    if(status === 'intel'){
+      switch(event.which){
+        case 27: //Esc
+          $visual.fadeOut('slow', function(){
+            // TODO: Image tag it.
+            $visual.html('<img alt="Sgc logo" height="300" src="/assets/sgc_logo.png">');
+            $visual.fadeIn('slow');
+          });
+          displayMenu();
+          break;
+      }      
+    }
+
   }
 
   function setVisual(path){
