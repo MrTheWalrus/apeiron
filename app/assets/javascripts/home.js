@@ -74,6 +74,18 @@
     })
   }
 
+  function stopInterlink(){
+      logLines([
+        ["Deactivating Interlink", 1000],
+        ["Interlink severed.", 50]
+      ]);
+      $log.one('finished', function(){
+        interlinkActive = false;
+        setStatus('running', "System Running. <i>Apeiron</i> Interlink offline.");
+        displayMenu();
+      });
+  }
+
   // TODO: Someday maybe the text doesn't live here? 
   function bootUp(){
     var bootLines = [
@@ -105,6 +117,7 @@
     ];
     if(interlinkActive){
       menuLines.push(["[<span class='key'>4</span>]: <i>Apeiron</i> Systems Interface", 5]);
+      menuLines.push(["[<span class='key'>5</span>]: Sever <i>Apeiron</i> Interlink", 5]);
     }else{
       menuLines.push(["[<span class='key'>4</span>]: Initiate <i>Apeiron</i> Interlink", 5]);
     }
@@ -174,6 +187,12 @@
             displaySystems();
           }else{
             startInterlink();
+          }
+          break;
+        case 53: //5
+          console.log(interlinkActive);
+          if(interlinkActive){
+            stopInterlink();
           }
           break;
       }
