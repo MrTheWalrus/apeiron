@@ -1,31 +1,19 @@
-// Place all the styles related to the projects controller here.
+// Place all the styles related to the missions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.projects-container {
+div.missions-container {
   height: 350px;
   overflow-y: scroll;
 
-  span.res {
-    cursor: pointer;
-    padding: 0 5px 0 5px;
-    margin-right: 30px;
-    border: solid 1px white;
-  }
-
-  div.res-desc {
-    display: none;
-    margin-top: 5px;
-    border: solid 1px white;
-    padding: 5px;
-    width: 90%;
-  }
-
-  ul.project-list {
+  ul.mission-list {
     list-style: none;
   }
+  div.hidden {
+    display: none;
+  }
 
-  li.project-item {
+  li.mission-item {
     cursor: pointer;
     padding: 3px;
     margin: 5px;
@@ -39,14 +27,11 @@ div.projects-container {
   span.complete {
     color: #76EE00;
   }
-  span.approved {
+  span.active {
     color: #00FFAA;
   }
-  span.pending {
+  span.available {
     color: #FFE303;
-  }
-  span.failed {
-    color: #FF3D0D;
   }
   span.heading {
     font-weight: bold;

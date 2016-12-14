@@ -74,6 +74,18 @@
     })
   }
 
+  function stopInterlink(){
+      logLines([
+        ["Deactivating Interlink", 1000],
+        ["Interlink severed.", 50]
+      ]);
+      $log.one('finished', function(){
+        interlinkActive = false;
+        setStatus('running', "System Running. <i>Apeiron</i> Interlink offline.");
+        displayMenu();
+      });
+  }
+
   // TODO: Someday maybe the text doesn't live here? 
   function bootUp(){
     var bootLines = [
@@ -100,12 +112,14 @@
       ["<span class='heading'>Main System Menu</span>", 300],
       ["[<span class='key'>ESC</span>]: Shut down system", 100],
       ["[<span class='key'>1</span>]: Project Tracking", 100],
-      ["[<span class='key'>2</span>]: Intel Report", 100]
+      ["[<span class='key'>2</span>]: Intel Report", 100],
+      ["[<span class='key'>3</span>]: Mission Briefings & Reports", 100],
     ];
     if(interlinkActive){
-      menuLines.push(["[<span class='key'>3</span>]: <i>Apeiron</i> Systems Interface", 5]);
+      menuLines.push(["[<span class='key'>4</span>]: <i>Apeiron</i> Systems Interface", 5]);
+      menuLines.push(["[<span class='key'>5</span>]: Sever <i>Apeiron</i> Interlink", 5]);
     }else{
-      menuLines.push(["[<span class='key'>3</span>]: Initiate <i>Apeiron</i> Interlink", 5]);
+      menuLines.push(["[<span class='key'>4</span>]: Initiate <i>Apeiron</i> Interlink", 5]);
     }
     logLines(menuLines);
     $log.one('finished', function(){
@@ -118,7 +132,6 @@
   }
 
   function shutDown(){
-    console.log('what');
     $visual.fadeOut('slow', function(){
       $visual.html('');
     });
@@ -166,10 +179,20 @@
           setVisual('/intel/home');
           break;
         case 51: //3
+          logLine('Accessing Mission Reports...');
+          setVisual('/missions');
+          break;
+        case 52: //4
           if(interlinkActive){
             displaySystems();
           }else{
             startInterlink();
+          }
+          break;
+        case 53: //5
+          console.log(interlinkActive);
+          if(interlinkActive){
+            stopInterlink();
           }
           break;
       }
@@ -238,6 +261,19 @@
           displayMenu();
           break;
       }      
+    }
+
+    if(status === 'missions'){
+      switch(event.which){
+          case 27: //Esc
+            $visual.fadeOut('slow', function(){
+              // TODO: Image tag it.
+              $visual.html('<img alt="Sgc logo" height="300" src="/assets/sgc_logo.png">');
+              $visual.fadeIn('slow');
+            });
+            displayMenu();
+            break;
+      } 
     }
 
   }
