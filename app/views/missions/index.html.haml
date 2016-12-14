@@ -1,0 +1,23 @@
+%div.missions-container
+  %h2 Mission Files
+  %p Click to expand.
+  - if @missions.empty?
+    No missions.
+  - else
+    %ul.mission-list
+      - @missions.each do |mission|
+        %li.mission-item
+          %span.heading
+            = "#{mission.number}: #{mission.name}"
+          %span.status{class: mission.status}
+            = mission.status
+          %div.mission-expand.hidden
+            - if mission.status == 'complete'
+              = mission.resolution
+            - else
+              = mission.brief
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.missions.onDocumentReady();
+  });

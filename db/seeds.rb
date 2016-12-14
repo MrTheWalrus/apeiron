@@ -80,3 +80,13 @@ end
   r = Faction.find_or_create_by_name(attrs[:name])
   r.update(attrs)
 end
+
+[
+  {number: '301', name: "Spectres",
+    brief: "Settling in at Omega Base.",
+    status: 'active'
+  }
+].each do |attrs|
+  r = Mission.find_or_create_by_number(attrs[:number])
+  r.update(attrs)
+end

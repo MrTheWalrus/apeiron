@@ -3,6 +3,6 @@ class IntelController < ApplicationController
 
   def home
     @factions = Faction.all
-    @events = Event.all
+    @events = Event.visible.all
   end
 end
