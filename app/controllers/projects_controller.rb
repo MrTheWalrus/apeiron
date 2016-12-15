@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @resources = Resource.order('id').all
-    @projects = Project.visible.order('approved_at desc').all
+    @projects = Project.unlocked.order('approved_at desc').all
   end
 
   def show

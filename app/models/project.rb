@@ -5,5 +5,5 @@ class Project < ActiveRecord::Base
 
   belongs_to :mission
 
-  scope :unlocked, -> { joins('left join missions on mission_id = missions.id').where("mission_id is null or missions.status == 'complete'") }
+  scope :unlocked, -> { joins('left join missions on projects.mission_id = missions.id').where("projects.mission_id is null OR missions.status like ?", 'complete') }
 end
