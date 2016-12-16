@@ -9,4 +9,17 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def update
+    @project = Project.find(params[:id])
+    @project.update(project_params)
+    redirect_to admin_index_path
+  end
+
+  private
+
+  def project_params
+    params.require(:project).permit!
+  end
+
+
 end

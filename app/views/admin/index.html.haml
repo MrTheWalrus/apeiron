@@ -1,0 +1,45 @@
+%h1 Admin
+%h2 Projects
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Name
+      %td Proposer
+      %td Description
+      %td Approved At
+      %td Status
+      %td Prerequisite Mission
+      %td Actions
+  %tbody
+    - @projects.each do |project|
+      %tr{id: "project-row-#{project.id}"}
+        %td= project.id
+        %td= project.name.html_safe
+        %td= project.proposer.html_safe
+        %td= truncate(project.description, length: 60).html_safe
+        %td= "#{time_ago_in_words(project.approved_at)} ago" if project.approved_at
+        %td= project.status
+        %td= project.mission.name if project.mission
+        %td= link_to('Edit', '', class: 'edit-project', id: "edit-project-#{project.id}", data: {project_id: project.id})
+      %tr.form.hidden{id: "project-form-#{project.id}"}
+        = simple_form_for project do |f|
+          %td
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :proposer, as: :string, label: false
+          %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td
+          %td= f.input :status, as: :string, label: false
+          %td= f.input :mission_id, collection: @missions, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-project-form{id: "cancel-button-#{project.id}"}
+              Cancel
+
+
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.admin.onDocumentReady();
+  });

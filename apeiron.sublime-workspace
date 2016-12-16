@@ -1,0 +1,1810 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"res-desc"
+			],
+			[
+				"curren",
+				"current_district"
+			],
+			[
+				"subg",
+				"subgrades_with_matching_name"
+			],
+			[
+				"current",
+				"current_district"
+			],
+			[
+				"overr",
+				"overrides"
+			],
+			[
+				"end",
+				"end_with"
+			],
+			[
+				"schedul",
+				"schedule_period_allocations"
+			],
+			[
+				"destroy",
+				"destroy_all"
+			],
+			[
+				"Target",
+				"TargetPreference"
+			],
+			[
+				"School",
+				"SchoolScheduleContexts"
+			],
+			[
+				"school",
+				"school_schedule_context"
+			],
+			[
+				"expect",
+				"expect_any_instance_of"
+			],
+			[
+				"orig",
+				"original_school_schedule"
+			],
+			[
+				"target",
+				"target_school"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"sched",
+				"schedule_period_allocations"
+			],
+			[
+				"schedule",
+				"schedule_period_definitions"
+			],
+			[
+				"schedule_e",
+				"schedule_period_allocations"
+			],
+			[
+				"new",
+				"new_schedule"
+			],
+			[
+				"school_spe",
+				"school_specials"
+			],
+			[
+				"sub",
+				"subgrade"
+			],
+			[
+				"source",
+				"source_sg"
+			],
+			[
+				"append",
+				"appendWarningElement"
+			],
+			[
+				"dest",
+				"destination_school_id"
+			],
+			[
+				"form",
+				"dialogForm"
+			],
+			[
+				"warning",
+				"warningText"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"display",
+				"displayErrors"
+			],
+			[
+				"sourc",
+				"source_subgrade_count"
+			],
+			[
+				"sg",
+				"sg_count"
+			],
+			[
+				"sel",
+				"selectedText"
+			],
+			[
+				"sch",
+				"school_scenarios"
+			],
+			[
+				"schedule_period_all",
+				"schedule_period_allocation_id"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"schedu",
+				"scheduleDiv"
+			],
+			[
+				"js",
+				"jsPDF"
+			],
+			[
+				"sche",
+				"school_schedule"
+			],
+			[
+				"activ",
+				"active_academic_year"
+			],
+			[
+				"act",
+				"active_module"
+			],
+			[
+				"In",
+				"INACTIVE"
+			],
+			[
+				"other",
+				"other_ay"
+			],
+			[
+				"lunch",
+				"lunch_on"
+			],
+			[
+				"lun",
+				"lunch_on"
+			],
+			[
+				"to",
+				"total_service_minutes"
+			],
+			[
+				"tot",
+				"total_travel_minutes"
+			],
+			[
+				"rank",
+				"rank_for"
+			],
+			[
+				"ran",
+				"ranking"
+			],
+			[
+				"expe",
+				"expected_rank"
+			],
+			[
+				"conf",
+				"configurable"
+			],
+			[
+				"district",
+				"district_grades"
+			],
+			[
+				"acade",
+				"academic_year"
+			],
+			[
+				"acad",
+				"academic_year"
+			],
+			[
+				"academ",
+				"academic_years"
+			],
+			[
+				"academic",
+				"academic_years"
+			],
+			[
+				"Travel",
+				"TravelTime"
+			],
+			[
+				"distr",
+				"district"
+			],
+			[
+				"Trave",
+				"TravelSpreadsheet"
+			],
+			[
+				"middle",
+				"middle"
+			],
+			[
+				"Spred",
+				"Spreadsheet"
+			],
+			[
+				"desti",
+				"destination_school"
+			],
+			[
+				"trave",
+				"travel_time"
+			],
+			[
+				"last",
+				"last_year"
+			],
+			[
+				"for",
+				"for_model"
+			],
+			[
+				"alien",
+				"aliens_year"
+			],
+			[
+				"acd",
+				"academic_year"
+			],
+			[
+				"set",
+				"set_parent_restriction"
+			],
+			[
+				"old",
+				"old_service"
+			],
+			[
+				"con",
+				"configurable"
+			],
+			[
+				"valdat",
+				"validates_presence_of"
+			],
+			[
+				"parent",
+				"parent_value"
+			],
+			[
+				"distric",
+				"district_grade"
+			],
+			[
+				"academi",
+				"academic_year"
+			],
+			[
+				"profil",
+				"profile_for_year"
+			],
+			[
+				"curre",
+				"current_district"
+			],
+			[
+				"school_sc",
+				"school_schedule_contexts"
+			],
+			[
+				"ser",
+				"service_schedule_set"
+			],
+			[
+				"distri",
+				"district_id"
+			],
+			[
+				"cure",
+				"current_academic_year"
+			],
+			[
+				"acadm",
+				"academic_year_id"
+			],
+			[
+				"current_",
+				"current_academic_year"
+			],
+			[
+				"servi",
+				"service"
+			],
+			[
+				"serv",
+				"service_type_id"
+			],
+			[
+				"is",
+				"is_expected"
+			],
+			[
+				"service",
+				"service_schedule_sets"
+			],
+			[
+				"curr",
+				"current_academic_year"
+			],
+			[
+				"masters",
+				"master_schedule_sets"
+			],
+			[
+				"pract",
+				"practitioner_name"
+			],
+			[
+				"prac",
+				"practitioner_name"
+			],
+			[
+				"pre",
+				"pre_assigned_practitioner"
+			],
+			[
+				"affec",
+				"affected_schedule_ids"
+			],
+			[
+				"cu",
+				"custom_signup_confirmation"
+			],
+			[
+				"invite",
+				"invite_ids"
+			],
+			[
+				"staff",
+				"staff_users_path"
+			],
+			[
+				"uni",
+				"uninvitable_users"
+			],
+			[
+				"inv",
+				"invite_ids"
+			],
+			[
+				"send",
+				"send_invites_staff_users_path"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"sele",
+				"selectAllButton"
+			],
+			[
+				"echo",
+				"echo_and_run"
+			],
+			[
+				"clas",
+				"classroom_params"
+			],
+			[
+				"del",
+				"deletable_classroom"
+			],
+			[
+				"ex",
+				"existing_classroom"
+			],
+			[
+				"edit",
+				"edit_staff_school_path"
+			],
+			[
+				"the",
+				"the_school"
+			],
+			[
+				"classroom",
+				"classroom_params"
+			],
+			[
+				"master",
+				"master_schedule_set"
+			],
+			[
+				"show",
+				"showError"
+			],
+			[
+				"sho",
+				"showError"
+			],
+			[
+				"classr",
+				"classroom_id"
+			],
+			[
+				"click",
+				"click_save_button"
+			],
+			[
+				"gro",
+				"group_size_limits_attributes"
+			],
+			[
+				"du",
+				"dumb_version"
+			],
+			[
+				"permi",
+				"permitted"
+			],
+			[
+				"config",
+				"configuration_attributes"
+			],
+			[
+				"save",
+				"saveButtonClickedHandler"
+			],
+			[
+				"class",
+				"classroom"
+			],
+			[
+				"new_",
+				"new_sg"
+			],
+			[
+				"scheu",
+				"schedulable"
+			],
+			[
+				"dist",
+				"district_admin_in_own_district"
+			],
+			[
+				"Sch",
+				"SchoolSchedule"
+			],
+			[
+				"required",
+				"required_roles"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"Super",
+				"SUPER_ADMIN"
+			],
+			[
+				"require",
+				"required_roles"
+			],
+			[
+				"S",
+				"SUPER_ADMIN"
+			],
+			[
+				"feat",
+				"feature_name"
+			],
+			[
+				"fea",
+				"feature_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "db/migrate/20161212150749_create_missions.rb",
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 8603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/projects_controller.rb",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/project.rb",
+			"settings":
+			{
+				"buffer_size": 179,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/home.js",
+			"settings":
+			{
+				"buffer_size": 9796,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/projects/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 1300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/projects.js",
+			"settings":
+			{
+				"buffer_size": 721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/projects.css.scss",
+			"settings":
+			{
+				"buffer_size": 1070,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1893,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ember",
+				"Simple Ember.js Navigator: List controllers"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/imclean/Sites/apeiron/db/migrate/20161209042722_create_events.rb",
+		"/Users/imclean/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/imclean/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/invites_controller.rb",
+		"/Users/imclean/Sites/dmStaffing/app/assets/javascripts/authenticated.js",
+		"/Users/imclean/Sites/dmStaffing/app/assets/javascripts/ocelot.js",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/COLORS.md",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/CONVENTIONS.md",
+		"/Users/imclean/Sites/dmStaffing/app/views/shared/layout/_title.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/sessions_controller.rb",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/concerns/current_context.rb",
+		"/Users/imclean/Sites/dmStaffing/config/initializers/devise.rb",
+		"/Users/imclean/Sites/dmStaffing/app/helpers/authorization_helper.rb",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/page-layer/sections/_academic-year-configuration-form.css.scss",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/page-layer/controllers/_districts.css.scss",
+		"/Users/imclean/Sites/dmStaffing/app/views/shared/_academic_year_module_options.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/models/school.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/burninators/school_burninator.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/burninators/service_schedule_set_burninator.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/schedule_period_allocation.rb",
+		"/Users/imclean/Sites/dmStaffing/app/policies/school_schedule_policy.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/school_schedule.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/academic_year.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/district_period_definition.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/district.rb",
+		"/Users/imclean/Sites/dmStaffing/lib/trogdor/burninators/base.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/burninators/event_burninator.rb",
+		"/Users/imclean/Sites/dmStaffing/lib/academic_year_assigner.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/schedule_period_definition.rb",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/app-layer/components/_icon.css.scss",
+		"/Users/imclean/Sites/dmStaffing/app/assets/javascripts/page-layer/controllers/schl/schedule-copy-dialog.js",
+		"/Users/imclean/Sites/dmStaffing/app/services/school_schedule_duplicator/school_verifier.rb",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/schl/master_school_schedules_controller.rb",
+		"/Users/imclean/Sites/dmStaffing/app/services/school_schedule_duplicator/cross_school.rb",
+		"/Users/imclean/Sites/dmStaffing/app/policies/master_school_schedule_policy.rb",
+		"/Users/imclean/Sites/dmStaffing/app/views/users/index.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/views/schl/schools/edit.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/views/districts/edit.html.haml",
+		"/Users/imclean/Sites/dmStaffing/penguin/app/components/add-student-dialog.js",
+		"/Users/imclean/Sites/dmStaffing/spec/decorators/iep_service_form_decorator_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/app/views/schl/master_school_schedules/_schedule_copy_dialog.haml",
+		"/Users/imclean/Sites/dmStaffing/app/views/staff/setup/students/_new_classroom_dialog.html.haml",
+		"/Users/imclean/Sites/dmStaffing/config/routes/schl.rb",
+		"/Users/imclean/Sites/dmStaffing/app/assets/javascripts/app-layer/components/student-autocomplete.js",
+		"/Users/imclean/Sites/dmStaffing/app/assets/javascripts/page-layer/controllers/staff/setup/students/new-classroom-dialog.js",
+		"/Users/imclean/Sites/dmStaffing/app/models/master_school_schedule.rb",
+		"/Users/imclean/Sites/dmStaffing/app/decorators/application_decorator.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/master_schedule_set.rb",
+		"/Users/imclean/Sites/dmStaffing/app/views/staff/setup/students/_form.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/decorators/master_school_schedule_decorator.rb",
+		"/Users/imclean/Sites/dmStaffing/app/views/staff/setup/students/edit.html.haml",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/schl/api/periods_controller.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/school_schedule_special.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/period.rb",
+		"/Users/imclean/Sites/dmStaffing/vendor/assets/bower_components/uri.js/build.js",
+		"/Users/imclean/Sites/dmStaffing/app/controllers/schl/api/district_specials_controller.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/district_specials_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/app/policies/period_policy.rb",
+		"/Users/imclean/Sites/dmStaffing/app/policies/school_schedule_elements_policy.rb",
+		"/Users/imclean/Sites/dmStaffing/app/assets/stylesheets/app-layer/components/_popover.css.scss",
+		"/Users/imclean/Sites/dmStaffing/app/views/schl/ocelot/show.html.haml",
+		"/Users/imclean/Sites/dmStaffing/Rakefile",
+		"/Users/imclean/Sites/dmStaffing/spec/models/schedule_period_definition_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/schedule_period_definitions_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/periods_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/users_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/features/step_definitions/generation_steps.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/role.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/user.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/generation/core/enroute_slot_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/travel_spreadsheet_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/student_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/restriction_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/ranking_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/integration/generation/restrictions/no_push_during_lunch_integration_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/service_schedule_sets_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/users_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/district_grades_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/setup/students_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/api/classrooms_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/subgrades_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/setup/schools_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/district_schedule_contexts_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/district_period_allocations_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/student.rb",
+		"/Users/imclean/Sites/dmStaffing/features/generation/academic_day/single_school_academic_day.feature",
+		"/Users/imclean/Sites/dmStaffing/features/step_definitions/fit_steps.rb",
+		"/Users/imclean/dev_functions",
+		"/Users/imclean/Sites/dmStaffing/lib/scheduler_library/schedule_parameters.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/configuration.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/academic_year_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/shared/controller_json.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/matchers/match_json.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/iep_service.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/concerns/inherits_academic_year_from_parent.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/lib/the_data_works.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/models/target_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/student_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/classroom_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/travel_spreadsheet.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/abstract_district_spreadsheet.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/shared/abstract_district_spreadsheet_shared_examples.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/config/use_data_works.rb",
+		"/Users/imclean/Sites/dmStaffing/app/models/travel_time.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/school_grade_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/decorators/event_decorator_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/event_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/service_schedule_set_generations_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/factories/target_factory.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/shared/schedules_authorization_examples.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/shared/authorization_examples.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/lib/describe_authorization.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/presenters/service_presenter_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/setup/import_logs_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/services_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/real_services_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/needs_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/imports_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/sections_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/school_schedules_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/school_schedule_specials_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/school_schedule_contexts_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/schedule_period_allocations_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/schl/api/district_period_definitions_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/vendor/gems/data_works-0.0.1/lib/data_works/works.rb",
+		"/Users/imclean/Sites/dmStaffing/vendor/gems/data_works-0.1.0/README.md",
+		"/Users/imclean/Sites/dmStaffing/spec/controllers/staff/schools_controller_spec.rb",
+		"/Users/imclean/Sites/dmStaffing/spec/support/lib/factory_girl_extensions.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"-*coverage/*, -*node_modules/*, -*bower_components/*",
+			"-*.map,-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, -*/*vendor.js, -penguin-app.js, -ocelot-app.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*.map,-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, -*vendor.js, -penguin-app.js, -ocelot-app.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*.map,-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, *vendor.js, -penguin-app.js, -ocelot-app.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*.map,-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, -quokka-vendor.js, -penguin-app.js, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*.map,-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, -penguin-app.js, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -quokka-app.js, -penguin-app.js, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -penguin-app.js, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, -*.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, */spec*, -*.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, */spec* -*.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, */spec*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, /spec",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js, app/models/generation/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-ui-*, -*penguin/dist*, -*penguin-vendor.js",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*, -*jquery-ui-*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*, -*ocelot/dist*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, -*ocelot/tmp/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, spec/controllers",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, spec/models",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*, spec/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/* spec/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -ocelot-vendor.js, -*log/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js, -*log/*",
+			"-*coverage/*, -*node_modules/*, -*bower_components/*, -ocelot-app.js",
+			"-*coverage/*, -*node_modules/*, -*bower_modules/*, -ocelot-app.js",
+			"-*coverage/*, -*node_modules/*, -*bower_modules/*",
+			"-*coverage/*, -*node-modules/*, -*bower-modules/*",
+			"-*coverage/*",
+			"-*coverage/*,-*bower_components/*,-*node_modules/* ",
+			"-*coverage/*,-*bower_components/*,-*node_modules/* *.haml",
+			"-*coverage/*,-*bower_components/*,-*node_modules/*",
+			"-*coverage/*,-*bower_components/*",
+			"-*coverage/*",
+			"",
+			"app/controllers*",
+			"",
+			"app/controllers*",
+			"-coverage/* app/controllers/*",
+			"-coverage/*",
+			"~/coverage",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tm",
+			"hidden",
+			" resolution: text",
+			"\n    resolution: text",
+			"str",
+			", status: 'hidden'}",
+			"build_by_attribute",
+			".header",
+			"lll",
+			"exclude",
+			"lll",
+			"check_district",
+			"DMC =",
+			"DMC=",
+			"DMC",
+			"lll",
+			".warning-content",
+			".warning",
+			"color:",
+			"font-color",
+			".district-switcher",
+			"district-switcher",
+			".district-menu",
+			".change-district",
+			"change-district",
+			"presentation",
+			"li.divider",
+			"district-menu",
+			"def distr",
+			"deactivated.",
+			"simple.",
+			"def use_test_dist",
+			"authenticate!",
+			"authenticate",
+			"lll",
+			"def set_current_district",
+			"set_current_district",
+			"check_for_temp",
+			"check_for",
+			"def authenticate",
+			"def authenticate_",
+			"Manage Districts",
+			"School Scheduling",
+			"enable-submit",
+			"float-left",
+			"floatLeft",
+			"float",
+			"float-",
+			"enable-submit",
+			"staff-scheduling-features",
+			"staff-scheduling_features",
+			"ds-popover",
+			"destroy",
+			"import",
+			"this may take",
+			"this could take",
+			"parent_row_name",
+			"icon-xlg",
+			"copied-scen",
+			"name",
+			"FIXME",
+			"spa",
+			"new_name",
+			"lll",
+			"an action only",
+			"flash[",
+			"duplicator",
+			"an action only for",
+			"target:",
+			"copy",
+			"current_user.manage",
+			"current_user.can",
+			"current_user.",
+			"authorized",
+			"can?",
+			"working",
+			"spinner",
+			"schoolName",
+			"indexOf",
+			"includes(",
+			"includes",
+			"tooltip",
+			"hover",
+			"spa",
+			"rot",
+			"@source",
+			"school_special",
+			"CreateSssDialog",
+			"NewClassroomDialog",
+			"appendWarningElement(",
+			"appendErrorElement",
+			"$warnings",
+			"()",
+			"$warningBox()",
+			"$continueButton()",
+			"()",
+			"$errorText()",
+			"$errorBox()",
+			"$warningText()",
+			"$dialogForm()",
+			"$copyButton()",
+			" };",
+			" function() { return ",
+			"sourceSchoolName()",
+			"$sourceSchoolName",
+			"$newName()",
+			"NewName",
+			"newName",
+			"schoolSelect()",
+			"schoolSelect",
+			"scenarioSelect()",
+			"scenarioSelect",
+			"viewTriggerAction",
+			"$view()",
+			"any_instance",
+			"instance_of",
+			"expect(assigns",
+			"assigns",
+			"source_ss",
+			"target_ss",
+			"school_scenario_options",
+			"errorText",
+			"alert-w",
+			"error",
+			"copyB",
+			".alert-danger",
+			"border",
+			"dialog-alert"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"login_as",
+			"log_in_as_",
+			"log_in_as(",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "db/migrate/20161212150749_create_missions.rb",
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 8603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8405,
+								8405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1277.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/projects_controller.rb",
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/project.rb",
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								137,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/javascripts/home.js",
+					"settings":
+					{
+						"buffer_size": 9796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 579.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/projects/index.html.haml",
+					"settings":
+					{
+						"buffer_size": 1300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/javascripts/projects.js",
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/stylesheets/projects.css.scss",
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"",
+				"app/assets/javascripts/home.js"
+			],
+			[
+				"projectcss",
+				"app/assets/stylesheets/projects.css.scss"
+			],
+			[
+				"projectj",
+				"app/assets/javascripts/projects.js"
+			],
+			[
+				"projectind",
+				"app/views/projects/index.html.haml"
+			],
+			[
+				"seeds",
+				"db/seeds.rb"
+			],
+			[
+				"homej",
+				"app/assets/javascripts/home.js"
+			],
+			[
+				"projec",
+				"app/models/project.rb"
+			],
+			[
+				"projectcon",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				".haml",
+				"app/views/users/index.html.haml"
+			],
+			[
+				"eny",
+				"config/locales/en.yml"
+			],
+			[
+				"sessionscon",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"districtsw",
+				"app/views/shared/layout/header/_district_switcher.html.haml"
+			],
+			[
+				"specialrota",
+				"spec/services/special_rotation_denormalizer_spec.rb"
+			],
+			[
+				"createresourc",
+				"db/migrate/20161206185340_create_resources.rb"
+			],
+			[
+				"invitesco",
+				"app/controllers/invites_controller.rb"
+			],
+			[
+				"inviteconspe",
+				"spec/controllers/invites_controller_spec.rb"
+			],
+			[
+				"copydialog",
+				"/Users/imclean/Sites/dmStaffing/app/views/schl/master_school_schedules/_schedule_copy_dialog.haml"
+			],
+			[
+				"dialog",
+				"app/assets/javascripts/page-layer/components/staff/create-sss-dialog.js"
+			],
+			[
+				"subgradefacto",
+				"spec/factories/subgrade_factory.rb"
+			],
+			[
+				"schoolgradeburn",
+				"spec/models/burninators/school_grade_burninator_spec.rb"
+			],
+			[
+				"sessiocon",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"districtswitcher",
+				"app/views/shared/layout/header/_district_switcher.html.haml"
+			],
+			[
+				"headingbar",
+				"app/views/shared/layout/header/_heading_bar.html.haml"
+			],
+			[
+				"header",
+				"app/views/shared/layout/_header.html.haml"
+			],
+			[
+				"invitecon",
+				"app/controllers/invites_controller.rb"
+			],
+			[
+				"invitescont",
+				"spec/controllers/invites_controller_spec.rb"
+			],
+			[
+				"invit",
+				"app/controllers/invites_controller.rb"
+			],
+			[
+				"usersindex",
+				"app/views/users/index.html.haml"
+			],
+			[
+				"distri",
+				"app/models/district.rb"
+			],
+			[
+				"navbarnavi",
+				"app/views/shared/layout/navbar/_navigation.html.haml"
+			],
+			[
+				"sharedheader",
+				"app/views/shared/layout/_header.html.haml"
+			],
+			[
+				"pagecontent",
+				"app/views/shared/layout/_page_content.html.haml"
+			],
+			[
+				"commonrb",
+				"spec/data/test_districts/simple/common.rb"
+			],
+			[
+				"testdistrict",
+				"spec/data/test_districts/abstract_test_district.rb"
+			],
+			[
+				"sessionspec",
+				"spec/models/generation/academic_sessions/academic_session_spec.rb"
+			],
+			[
+				"en.yml",
+				"config/locales/en.yml"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"crosssch",
+				"app/services/school_schedule_duplicator/cross_school.rb"
+			],
+			[
+				"districts",
+				"app/controllers/districts_controller.rb"
+			],
+			[
+				"applicationcont",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"devis",
+				"config/initializers/devise.rb"
+			],
+			[
+				"autho",
+				"app/helpers/authorization_helper.rb"
+			],
+			[
+				"schoolveri",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"crossschoolspec",
+				"spec/services/school_schedule_duplicator/cross_school_spec.rb"
+			],
+			[
+				"crossschool",
+				"app/services/school_schedule_duplicator/cross_school.rb"
+			],
+			[
+				"schoolverifier",
+				"spec/services/school_schedule_duplicator/school_verifier_spec.rb"
+			],
+			[
+				"schoolver",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"schoolschedu",
+				"app/models/school_schedule.rb"
+			],
+			[
+				"academicoptions",
+				"app/views/shared/_academic_year_module_options.html.haml"
+			],
+			[
+				"tooltipte",
+				"app/models/tooltip_text.rb"
+			],
+			[
+				"academoptions",
+				"app/views/shared/_academic_year_module_options.html.haml"
+			],
+			[
+				"academicyearmod",
+				"app/views/shared/_academic_year_module_options.html.haml"
+			],
+			[
+				"moduleoptions",
+				"app/views/shared/_academic_year_module_options.html.haml"
+			],
+			[
+				"districtform",
+				"app/views/districts/_form.html.haml"
+			],
+			[
+				"district",
+				"app/models/district.rb"
+			],
+			[
+				"addactiv",
+				"db/migrate/20161123154351_add_active_to_district.rb"
+			],
+			[
+				"crosssc",
+				"app/services/school_schedule_duplicator/cross_school.rb"
+			],
+			[
+				"servicescheduleset",
+				"app/models/service_schedule_set.rb"
+			],
+			[
+				"academic",
+				"app/models/academic_year.rb"
+			],
+			[
+				"userrb",
+				"app/models/user.rb"
+			],
+			[
+				"schoolbr",
+				"app/models/burninators/school_burninator.rb"
+			],
+			[
+				"school",
+				"app/models/school.rb"
+			],
+			[
+				"target",
+				"app/models/target.rb"
+			],
+			[
+				"targetpref",
+				"app/models/target_preference.rb"
+			],
+			[
+				"configurationrb",
+				"app/models/configuration.rb"
+			],
+			[
+				"serviceschedulesetbur",
+				"app/models/burninators/service_schedule_set_burninator.rb"
+			],
+			[
+				"schoolburn",
+				"app/models/burninators/school_burninator.rb"
+			],
+			[
+				"scheduleperiodall",
+				"app/models/schedule_period_allocation.rb"
+			],
+			[
+				"schoolschedule.rb",
+				"app/models/school_schedule.rb"
+			],
+			[
+				"schools",
+				"app/policies/school_schedule_policy.rb"
+			],
+			[
+				"schoolrb",
+				"app/models/school.rb"
+			],
+			[
+				"schoolschedulecont",
+				"app/models/school_schedule_context.rb"
+			],
+			[
+				"academi",
+				"app/models/academic_year.rb"
+			],
+			[
+				"districtperioddef",
+				"app/models/district_period_definition.rb"
+			],
+			[
+				"schedulecollab",
+				"app/models/schedule_collaboration.rb"
+			],
+			[
+				"burninatorbase",
+				"lib/trogdor/burninators/base.rb"
+			],
+			[
+				"travet",
+				"app/models/travel_time.rb"
+			],
+			[
+				"burnina",
+				"app/models/burninators/event_burninator.rb"
+			],
+			[
+				"traveltim",
+				"app/models/travel_time.rb"
+			],
+			[
+				"academicyearass",
+				"lib/academic_year_assigner.rb"
+			],
+			[
+				"scheduleperioddef",
+				"app/models/schedule_period_definition.rb"
+			],
+			[
+				"invaliddataclean",
+				"db/migrate/20161121145931_invalid_data_cleanup.rb"
+			],
+			[
+				"academic_year",
+				"app/models/academic_year.rb"
+			],
+			[
+				"schoolschedle.rb",
+				"app/models/school_schedule.rb"
+			],
+			[
+				"application",
+				"config/application.yml"
+			],
+			[
+				"masterschooldec",
+				"app/decorators/master_school_schedule_decorator.rb"
+			],
+			[
+				"masterschoolschedulecont",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"masterschoolcss",
+				"app/assets/stylesheets/page-layer/controllers/schl/_master-school-schedules.css.scss"
+			],
+			[
+				"schedulecopydialo",
+				"app/views/schl/master_school_schedules/_schedule_copy_dialog.haml"
+			],
+			[
+				"schedulecopyjs",
+				"app/assets/javascripts/page-layer/controllers/schl/schedule-copy-dialog.js"
+			],
+			[
+				"schedulecopydial",
+				"app/views/schl/master_school_schedules/_schedule_copy_dialog.haml"
+			],
+			[
+				"scheduledidialog",
+				"app/views/staff/schedules/_schedule_item_dialog.html.haml"
+			],
+			[
+				"masterschoolschedulcon",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"verifi",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"masterschoolscheducon",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"verifierspec",
+				"spec/services/school_schedule_duplicator/school_verifier_spec.rb"
+			],
+			[
+				"mastersch",
+				"app/models/master_school_schedule.rb"
+			],
+			[
+				"schoolschedulepolic",
+				"app/policies/school_schedule_policy.rb"
+			],
+			[
+				"masterschoolschedulecon",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"masterschoolcont",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"schoolv",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"scenario",
+				"app/services/school_schedule_duplicator/scenario.rb"
+			],
+			[
+				"crossschoolspe",
+				"spec/services/school_schedule_duplicator/cross_school_spec.rb"
+			],
+			[
+				"verifer",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"veri",
+				"app/services/school_schedule_duplicator/school_verifier.rb"
+			],
+			[
+				"duplicatorspe",
+				"spec/services/school_schedule_duplicator_spec.rb"
+			],
+			[
+				"copydialo",
+				"app/assets/javascripts/page-layer/controllers/schl/schedule-copy-dialog.js"
+			],
+			[
+				"masterschoolindex",
+				"app/views/schl/master_school_schedules/index.html.haml"
+			],
+			[
+				"schedcopy",
+				"app/views/schl/master_school_schedules/_schedule_copy_dialog.haml"
+			],
+			[
+				"schecopydia",
+				"app/assets/javascripts/page-layer/controllers/schl/schedule-copy-dialog.js"
+			],
+			[
+				"schedcopydia",
+				"app/views/schl/master_school_schedules/_schedule_copy_dialog.haml"
+			],
+			[
+				"schoolschedulecontrospe",
+				"spec/controllers/schl/api/school_schedules_controller_spec.rb"
+			],
+			[
+				"masterscontr",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"schoolschedupol",
+				"app/policies/school_schedule_policy.rb"
+			],
+			[
+				"schoolschedulepol",
+				"app/policies/school_schedule_policy.rb"
+			],
+			[
+				"masterschoolpoli",
+				"app/policies/master_school_schedule_policy.rb"
+			],
+			[
+				"masterindex",
+				"app/views/schl/master_school_schedules/index.html.haml"
+			],
+			[
+				"masterschcss",
+				"app/assets/stylesheets/page-layer/controllers/staff/_master-schedule-sets.css.scss"
+			],
+			[
+				"districtsedit",
+				"app/views/districts/edit.html.haml"
+			],
+			[
+				"schooledit",
+				"app/views/schl/schools/edit.html.haml"
+			],
+			[
+				"schoolschedulerb",
+				"app/models/school_schedule.rb"
+			],
+			[
+				"base",
+				"app/services/school_schedule_duplicator/base.rb"
+			],
+			[
+				"masterschoocon",
+				"app/controllers/schl/master_school_schedules_controller.rb"
+			],
+			[
+				"schoolscheduleconte",
+				"app/models/school_schedule_context.rb"
+			],
+			[
+				"cross",
+				"app/services/school_schedule_duplicator/cross_school.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true
+}
