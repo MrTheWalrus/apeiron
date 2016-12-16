@@ -2,7 +2,7 @@ class FactionsController < ApplicationController
   layout false
 
   def index
-    @factions = Faction.all
+    @factions = Faction.by_power.all
   end
 
   def update
