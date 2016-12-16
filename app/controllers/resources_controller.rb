@@ -8,7 +8,7 @@ class ResourcesController < ApplicationController
   def update
     @resource = Resource.find(params[:id])
     @resource.update(resource_params)
-    redirect_to admin_home_path
+    redirect_to admin_index_path
   end
 
   private
