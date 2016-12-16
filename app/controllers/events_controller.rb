@@ -8,6 +8,7 @@ class EventsController < ApplicationController
   def update
     @event = event.find(params[:id])
     @event.update(event_params)
+    redirect_to admin_home_path
   end
 
   private

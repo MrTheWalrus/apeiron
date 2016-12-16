@@ -10,18 +10,20 @@
     //The main interface probably shouldn't even be loaded, but meh.
     Apeiron.home.setStatus("admin"); 
 
-    $('.edit-project').click(function(e){
-      e.preventDefault();
-      $(this).parents('tr').hide();
-      var formSelector = $(this).attr('id').replace('edit-project', '#project-form')
-      console.log(formSelector);
-      $(formSelector).show();
+    //For each table, enable the edit link opening the form, and the cancel button closing it.
+    //TODO: Submit forms via AJAX and update row based on response.
+    $.each(['project', 'resource', 'faction', 'event', 'mission'], function(index, model){
+      $(('.edit-'+model)).click(function(e){
+        e.preventDefault();
+        $(this).parents('tr').hide();
+        $($(this).attr('id').replace('edit-'+model, '#'+model+'-form')).show();
+      });
+      $('button.cancel-'+model+'-form').click(function(e){
+        e.preventDefault();
+        $(this).parents('tr').hide();
+        $($(this).attr('id').replace(model+'-cancel-button', '#'+model+'-row')).show();
+      });
     });
-    $('button.cancel-project-form').click(function(e){
-      e.preventDefault();
-      $(this).parents('tr').hide();
-      var rowSelector = $(this).attr('id').replace('cancel-button', '#project-row')
-      $(rowSelector).show();
-    });
+
   }
 }());

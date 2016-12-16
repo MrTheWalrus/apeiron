@@ -8,6 +8,7 @@ class FactionsController < ApplicationController
   def update
     @faction = Faction.find(params[:id])
     @faction.update(faction_params)
+    redirect_to admin_home_path
   end
 
   private
