@@ -187,3 +187,25 @@ update_by_attribute(Project, :name, [
     mission: Mission.find_by_name('Politics')
   },
 ])
+
+# Events: name: text, description: text, action: text, resolution: text, status: string,
+update_by_attribute(Event, :name, [
+  {name: "Fire on High",
+    description: "Anubis used the <i>Dread Crocodile</i> as a test-bed for upgraded Ha'tak plasma cannons. These upgrades are about to be rolled out to the entire fleet.",
+    resolution: "Anubis has completed the deployment of upgraded weapons to his fleet. Lord Yu's ships will now need superior numbers to emerge victorious from a given engagement.",
+    action: "No Action",
+    status: 'hidden'
+  },
+  {name: "Sea Legs",
+    description: "Jacob Carter and the Tok'ra have returned, and they have valuable intel gathered from the interrogation of Osiris.",
+    status: 'hidden'
+  },
+  {name: "Ragnarok",
+    description: "Word has come from Oshu - Anubis intended to attack the Protected world of Cimmeria as a demonstration of strength. The Asgard are too busy to enforce their treaty, and while Oshu wishes to protect his lord's honor, there they have no forces to spare to oppose this attack.",
+    status: 'hidden'
+  },
+  {name: "Death Knell",
+    description: "An emergency transmission has arrived from the Alpha Site - the base is under attack.",
+    status: 'hidden'
+  },
+])
