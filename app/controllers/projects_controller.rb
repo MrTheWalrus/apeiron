@@ -1,12 +1,25 @@
 class ProjectsController < ApplicationController
   layout false
-  # For now, maybe this is it?
+
   def index
     @resources = Resource.order('id').all
-    @projects = Project.order('approved_at desc').all
+    @projects = Project.unlocked.order('approved_at desc').all
   end
 
   def show
   end
+
+  def update
+    @project = Project.find(params[:id])
+    @project.update(project_params)
+    redirect_to admin_index_path
+  end
+
+  private
+
+  def project_params
+    params.require(:project).permit!
+  end
+
 
 end

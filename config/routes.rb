@@ -1,5 +1,15 @@
 Apeiron::Application.routes.draw do
+  resources :admin, only: [:index]
+
+  resources :missions
+
   resources :projects
+
+  resources :resources
+
+  resources :events
+
+  resources :factions
 
   get "intel/home"
 
