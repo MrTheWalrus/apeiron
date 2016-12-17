@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20161215175531) do
     t.text     "name"
     t.text     "brief"
     t.text     "resolution"
-    t.string   "status"
+    t.string   "status",     default: "hidden"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

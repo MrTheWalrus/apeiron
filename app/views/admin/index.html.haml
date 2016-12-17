@@ -1,0 +1,175 @@
+%h1 Admin
+%h2 Projects
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Name
+      %td Proposer
+      %td Description
+      %td Approved At
+      %td Status
+      %td Prerequisite Mission
+      %td Actions
+  %tbody
+    - @projects.each do |project|
+      %tr{id: "project-row-#{project.id}"}
+        %td= project.id
+        %td= project.name.try(:html_safe)
+        %td= project.proposer.try(:html_safe)
+        %td= truncate(project.description, length: 60).try(:html_safe)
+        %td= "#{time_ago_in_words(project.approved_at)} ago" if project.approved_at
+        %td= project.status
+        %td= project.mission.name if project.mission
+        %td= link_to('Edit', '', class: 'edit-project', id: "edit-project-#{project.id}", data: {project_id: project.id})
+      %tr.form.hidden{id: "project-form-#{project.id}"}
+        = simple_form_for project do |f|
+          %td
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :proposer, as: :string, label: false
+          %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td
+          %td= f.input :status, as: :string, label: false
+          %td= f.input :mission_id, collection: @missions, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-project-form{id: "project-cancel-button-#{project.id}"}
+              Cancel
+
+%h2 Resources
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Name
+      %td Description
+      %td Quantity
+      %td Actions
+  %tbody
+    - @resources.each do |resource|
+      %tr{id: "resource-row-#{resource.id}"}
+        %td= resource.id
+        %td= resource.name.try(:html_safe)
+        %td= truncate(resource.description, length: 60).try(:html_safe)
+        %td= "#{resource.quantity}#{resource.unit}"
+        %td= link_to('Edit', '', class: 'edit-resource', id: "edit-resource-#{resource.id}", data: {resource_id: resource.id})
+      %tr.form.hidden{id: "resource-form-#{resource.id}"}
+        = simple_form_for resource do |f|
+          %td
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td
+            = f.input :quantity, as: :string, label: false
+            = f.input :unit, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-resource-form{id: "resource-cancel-button-#{resource.id}"}
+              Cancel
+
+%h2 Factions
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Name
+      %td Fleet Strength
+      %td Territory
+      %td Notes
+      %td Actions
+  %tbody
+    - @factions.each do |faction|
+      %tr{id: "faction-row-#{faction.id}"}
+        %td= faction.id
+        %td= faction.name
+        %td= faction.fleet
+        %td= faction.territory
+        %td= faction.notes
+        %td= link_to('Edit', '', class: 'edit-faction', id: "edit-faction-#{faction.id}", data: {faction_id: faction.id})
+      %tr.form.hidden{id: "faction-form-#{faction.id}"}
+        = simple_form_for faction do |f|
+          %td
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :fleet, as: :string, label: false
+          %td= f.input :territory, as: :string, label: false
+          %td= f.input :notes, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-faction-form{id: "faction-cancel-button-#{faction.id}"}
+              Cancel
+
+%h2 Missions
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Number
+      %td Name
+      %td Briefing
+      %td Resolution
+      %td Status
+      %td Actions
+  %tbody
+    - @missions.each do |mission|
+      %tr{id: "mission-row-#{mission.id}"}
+        %td= mission.id
+        %td= mission.number
+        %td= mission.name
+        %td= mission.brief.try(:html_safe)
+        %td= mission.resolution.try(:html_safe)
+        %td= mission.status
+        %td= link_to('Edit', '', class: 'edit-mission', id: "edit-mission-#{mission.id}", data: {mission_id: mission.id})
+      %tr.form.hidden{id: "mission-form-#{mission.id}"}
+        = simple_form_for mission do |f|
+          %td
+          %td= f.input :number, as: :string, label: false
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :brief, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td= f.input :resolution, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td= f.input :status, as: :string, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-mission-form{id: "mission-cancel-button-#{mission.id}"}
+              Cancel
+%h2 Dark Events
+%table.admin
+  %thead
+    %tr{}
+      %td ID
+      %td Name
+      %td Description
+      %td Action Taken
+      %td Resolution
+      %td Status
+      %td Actions
+  %tbody
+    - @events.each do |event|
+      %tr{id: "event-row-#{event.id}"}
+        %td= event.id
+        %td= event.name
+        %td= event.description.try(:html_safe)
+        %td= event.action
+        %td= event.resolution.try(:html_safe)
+        %td= event.status
+        %td= link_to('Edit', '', class: 'edit-event', id: "edit-event-#{event.id}", data: {event_id: event.id})
+      %tr.form.hidden{id: "event-form-#{event.id}"}
+        = simple_form_for event do |f|
+          %td
+          %td= f.input :name, as: :string, label: false
+          %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td= f.input :action, as: :string, label: false
+          %td= f.input :resolution, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
+          %td= f.input :status, as: :string, label: false
+          %td
+            =f.submit
+            %br
+            %button.cancel-event-form{id: "event-cancel-button-#{event.id}"}
+              Cancel
+
+:javascript
+  $(document).ready(function() {
+    Apeiron.admin.onDocumentReady();
+  });
