@@ -8,7 +8,7 @@ class MissionsController < ApplicationController
   def update
     @mission = Mission.find(params[:id])
     @mission.update(mission_params)
-    redirect_to admin_home_path
+    redirect_to admin_index_path
   end
 
   private
