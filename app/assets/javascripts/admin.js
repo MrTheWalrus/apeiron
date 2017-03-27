@@ -23,6 +23,11 @@
         $(this).parents('tr').hide();
         $($(this).attr('id').replace(model+'-cancel-button', '#'+model+'-row')).show();
       });
+      $('a.new-'+model).click(function(e){
+        e.preventDefault();
+        $(this).parents('tr').hide();
+        $('#'+model+'-form-new').show();
+      });
     });
 
   }

@@ -36,7 +36,19 @@
             %br
             %button.cancel-project-form{id: "project-cancel-button-#{project.id}"}
               Cancel
-
+    %tr
+      %td= link_to('Create Project', '', class: 'new-project')
+    %tr.form.hidden{id: "project-form-new"}
+      = simple_form_for Project.new do |f|
+        %td
+        %td= f.input :name, as: :string
+        %td= f.input :proposer, as: :string
+        %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}
+        %td= f.input :approved_at, as: :date
+        %td= f.input :status, as: :string
+        %td= f.input :mission_id, collection: @missions
+        %td
+          =f.submit
 %h2 Resources
 %table.admin
   %thead

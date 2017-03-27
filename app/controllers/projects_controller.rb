@@ -6,6 +6,12 @@ class ProjectsController < ApplicationController
     @projects = Project.unlocked.order('approved_at desc').all
   end
 
+  def create
+    @project = Project.new(project_params)
+    @project.save!
+    redirect_to admin_index_path
+  end
+
   def show
   end
 
