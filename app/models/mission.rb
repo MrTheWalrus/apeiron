@@ -5,5 +5,5 @@ class Mission < ActiveRecord::Base
 
   has_many :projects
 
-  validates :status, in: STATUSES
+  validates :status, inclusion: { in: STATUSES }
 end

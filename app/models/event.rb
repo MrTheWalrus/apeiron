@@ -3,6 +3,6 @@ class Event < ActiveRecord::Base
 
   STATUSES = ['hidden', 'available', 'ignored', 'active', 'resolved']
 
-  validates :status, in: STATUSES
+  validates :status, inclusion: { in: STATUSES }
 
 end
