@@ -1,7 +1,7 @@
 class Mission < ActiveRecord::Base
   include VisibleScope
 
-  STATUSES = ['hidden', 'active', 'complete']
+  STATUSES = ['hidden', 'available', 'active', 'complete']
 
   has_many :projects
 
