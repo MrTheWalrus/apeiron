@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
   include VisibleScope
 
-  STATUSES = ['hidden', 'pending', 'approved', 'complete', 'rejected']
+  STATUSES = ['hidden', 'pending', 'approved', 'complete', 'rejected', 'halted']
 
   belongs_to :mission
 

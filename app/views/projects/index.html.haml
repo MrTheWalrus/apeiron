@@ -26,6 +26,9 @@
           - if project.status == 'pending'
             %span.status.pending
               Pending Approval
+          - if project.status.in? ['halted', 'rejected', 'failed']
+            %span.status.halted
+              = project.status.capitalize
           %div.project-expand.hidden
             %div.proposed
               %span.heading 
