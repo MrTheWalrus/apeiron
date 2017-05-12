@@ -162,7 +162,7 @@
           %td= f.input :description, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
           %td= f.input :action, as: :string, label: false
           %td= f.input :resolution, as: :text, input_html: { :style=> 'width: 100%;', :rows => 6}, label: false
-          %td= f.input :status, as: :string, label: false
+          %td= f.input :status, collection: Event::STATUSES, label: false
           %td
             =f.submit
             %br

@@ -10,6 +10,7 @@ div.intel-container {
   border: solid 1px white;
 
   table {
+    width: 100%;
     border-collapse: collapse;
   }
   td {
@@ -17,5 +18,26 @@ div.intel-container {
   }
   td.number {
     text-align: center;
+  }
+  td.status {
+    float:right;
+    font-weight: bold;
+  }
+  .green {
+    color: #76EE00;
+  }
+  .yellow {
+    color: #FFE303;
+  }
+  .blue {
+    color: #00FFAA;
+  }
+  .red {
+    color: #FF3D0D;
+  }
+  .events {
+    td {
+      padding: 0 5px;
+    }
   }
 }

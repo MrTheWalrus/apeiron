@@ -18,11 +18,35 @@
   %h2 Enemy Action Report
   - if @events.empty?
     %p We have no reports available on enemy action.
-  - @events.each do |event|
-    %div.dark-event
-      = event.name
-      %div.event-desc
-        = event.description.html_safe
+  - else
+    %table.events
+      %thead
+        %tr
+          %th Event Name
+          %th Status
+          %th Notes
+      %tbody
+      - @events.each do |event|
+        %tr
+          %td
+            =event.name
+          - case event.status
+          - when 'ignored', 'failed'
+            %td.status.red
+              =event.status
+            %td
+              =event.resolution.html_safe
+          - when 'resolved'
+            %td.status.green
+              =event.status
+            %td
+              =event.resolution.html_safe
+          - else
+            %td.status.blue
+              =event.status
+            %td
+              =event.description.html_safe
+
 :javascript
   $(document).ready(function() {
     Apeiron.intel.onDocumentReady();
