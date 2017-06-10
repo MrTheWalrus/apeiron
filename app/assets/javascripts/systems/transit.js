@@ -13,7 +13,9 @@
       [" - Drive Status: <span class='bad'>Offline - insufficient power</span>", 200],
       ["System Registry 2: Navigation", 200],
       [" - Starmap Status: <span class='bad'>Offline - insufficient power</span>", 200],
-      ["System Registry 3: <span class='bad no-system'>&lt;Error: No such system/system not configured&gt;</span>", 200]
+      ["System Registry 3: Etheric Wake Drive", 200],
+      [" - Wake Fins: <span class='warn'>Under Construction</span>", 200],
+      [" - Fold Core: <span class='warn'>Awaiting Configuration</span>", 100]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');

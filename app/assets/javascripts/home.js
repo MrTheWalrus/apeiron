@@ -38,8 +38,8 @@
       ['Establishing interlink with <i>Apeiron</i> core systems.', 500],
       ['Output device: Mk5 Optical Interface Crystal: <span class="good">OK</span>', 250]
     ]
-    // Half of the time, there's a problem with the OIC config and it needs to be rebuilt
-    if(Math.random()>0.5){
+    // Some of the time, there's a problem with the OIC config and it needs to be rebuilt
+    if(Math.random()>0.7){
       $.merge(interlinkLines, [
         ['Input device: Mk5 Optical Interface Crystal: <span class="warn">NO_CONFIG</span>', 500],
         ['OIC configuration is stale. Generating new configuration. Please wait...', 2000],
@@ -60,6 +60,8 @@
       [' + - lib_ancient_technical_v0.1.4', 800],
       [' + - - lib_ancient_base_v0.9.13', 800],
       [' + - - lib_stargate_v0.8.4', 750],
+      [' + lib_sgc_technical_v1.5', 300],
+      [' + - lib_railgun_v0.33p12', 250],
       [' + lib_systems_gui_0.6.3', 300],
       ['Library build successful. 2 items, 4 dependencies.', 250],
       ['Sending <i>Apeiron</i> systems handshake, ID '+sessionId, 1000],

@@ -12,7 +12,9 @@
       [" - Launcher Bank Gamma:&nbsp&nbsp&nbsp<span class='good report-status'>Online</span> &nbsp;Launchers loaded: <span class='bad'>0/5</span> &nbsp;Ammunition reserve: <span class='bad'>0</span>", 100],
       [" - Launcher Bank Delta:&nbsp&nbsp&nbsp<span class='bad report-status'>Offline - Launchers damaged.</span>", 100],
       [" - Launcher Bank Epsilon:&nbsp<span class='good report-status'>Online</span> &nbsp;Launchers loaded: <span class='bad'>0/5</span> &nbsp;Ammunition reserve: <span class='bad'>0</span>", 100],
-      ["System Registry 1: <span class='bad power-no-system'>&lt;Error: No such system/system not configured&gt;</span>", 200]
+      ["System Registry 2: XM-553S Railgun System", 250],
+      [" - Fire Control Linkages: <span class='good'>Online</span> ", 250],
+      [" - <span class='bad'> 0/4</span> turrets online", 100]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');
