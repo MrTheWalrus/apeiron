@@ -12,7 +12,7 @@
       [" - Shield Region 3: <span class='bad report-status'>Offline - Insufficient Power</span>", 100],
       [" - Shield Region 4: <span class='warn report-status'>Offline - Shield regulator replacement underway</span>", 100],
       ["System Registry 1: Automated Repair Systems: <span class='bad report-status'>Offline - Insufficient Power</span>", 400],
-      ["System Registry 3: Sentinel Repair Drones: <span class='bad power-no-system'>&lt;Connection Error&gt;</span>", 200]
+      ["System Registry 3: Sentinel Repair Drones: <span class='warn power-no-system'>&lt;System Boot Failed&gt;</span>", 200]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');
