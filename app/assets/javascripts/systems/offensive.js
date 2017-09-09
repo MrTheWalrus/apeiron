@@ -14,7 +14,7 @@
       [" - Launcher Bank Epsilon:&nbsp<span class='good report-status'>Online</span> &nbsp;Launchers loaded: <span class='good'>5/5</span> &nbsp;Ammunition reserve: <span class='warn'>8</span>", 100],
       ["System Registry 2: XM-553S Railgun System", 250],
       [" - Fire Control Linkages: <span class='good'>Online</span> ", 250],
-      [" - <span class='warn'> 1/4</span> turrets online", 100]
+      [" - <span class='good'> 4/4</span> turrets online", 100]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');
