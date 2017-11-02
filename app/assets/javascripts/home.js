@@ -10,6 +10,7 @@
   var sessionId;
   var status = 'offline';
   var interlinkActive = false;
+  var crisisMode;
 
   self.onDocumentReady = function() {
     initVars();
@@ -95,17 +96,33 @@
       ['Testing System Memory: <span class=good>256000000 bytes OK</span>', 100],
       ['Memory Clock: <span class=good>266 MHz Tcl:5 Tcrd:7 Trp:7</span>', 300],
       ['Running Security Self-Check', 1900],
+    ];
+    var okayLines = [
       ['Checksum <span class="good">OK</span>', 250],
       ['Local Storage: <span class=good>SATA 1: ATAP1 iHAS160</span>', 200],
       ['Input device: Keyboard: <span class="good">OK</span>', 250],
       ['Input device: Pointer: <span class="good">OK</span>', 250],
       ['<i>Apeiron</i> Interlink: <span class="bad">Offline</span>', 250],
     ];
+    var failLines = [
+      ['Checksum <span class="bad">FAILED</span>', 750],
+      ['<span class="bad">Critical security breaches detected in mainframe.</span>', 250],
+      ['<span class="bad">Please contact your system administrator for additional information.</span>', 100],
+      ['<span class="bad">Terminal will now shut down to preserve system integrity.</span>', 4000],
+    ];
     $visual.fadeIn(2000);
     setStatus('booting', "Beginning system boot.");
-    logLines(bootLines);
+    if(crisisMode){
+      logLines($.merge(bootLines,failLines));
+    }else{
+      logLines($.merge(bootLines,okayLines));
+    }
     $log.one('finished', function(){
-      displayMenu();
+      if(crisisMode){
+        shutDown();
+      }else{
+        displayMenu();
+      }
     });
   };
 
@@ -151,6 +168,9 @@
     $log.one('finished', function(){
       $log.html('');
       setStatus('offline', 'System Offline. Press any key to begin boot sequence.');
+      if(crisisMode){
+        location.reload();
+      }
     })
   }
 
@@ -300,6 +320,7 @@
   function initVars(){
     $log = $('ul.log');
     $visual = $('div.visual');
+    crisisMode = $('div.content').hasClass('crisis');
   }
 
   function logLine(content) {

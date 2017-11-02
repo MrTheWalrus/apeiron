@@ -1,4 +1,10 @@
 %h1 Admin
+%p 
+  Crisis mode:
+  = Apeiron::Application.config.crisis
+  = button_to("Turn On", crisis_admin_index_path({set: 1}), method: :post )
+  = button_to("Turn Off", crisis_admin_index_path({set: 0}), method: :post)
+
 %h2 Projects
 %table.admin
   %thead

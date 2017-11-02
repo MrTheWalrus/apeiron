@@ -1,5 +1,9 @@
 Apeiron::Application.routes.draw do
-  resources :admin, only: [:index]
+  resources :admin, only: [:index] do
+    collection do
+      post :crisis
+    end
+  end
 
   resources :missions
 

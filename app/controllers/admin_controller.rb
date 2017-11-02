@@ -11,4 +11,9 @@ class AdminController < ApplicationController
     @factions = Faction.order(:fleet).reverse
     @events = Event.all
   end
+
+  def crisis
+    Apeiron::Application.config.crisis = (params[:set]=='1')
+    redirect_to admin_index_path
+  end
 end

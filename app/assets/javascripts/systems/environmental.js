@@ -11,7 +11,7 @@
       ["- Atmosphere Management: <span class='good'>Stable</span>",200],
       ["- Temperature Control: <span class='good'>Stable</span>",200],
       ["- Radiation Shielding: <span class='good'>Stable</span>",200],
-      ["Internal Transit Network: <span class='warn'>Main Line Active Only</span>",200]
+      ["Internal Transit Network: <span class='good'>Moderate Delays on Track C</span>",200]
     ]);
     $('ul.log').one('finished', function(){
       Apeiron.home.setStatus('systems');
