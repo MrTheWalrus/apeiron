@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -16,7 +15,7 @@ ActiveRecord::Schema.define(version: 20161215175531) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "events", force: true do |t|
+  create_table "events", force: :cascade do |t|
     t.text     "name"
     t.text     "description"
     t.text     "action"
@@ -26,7 +25,7 @@ ActiveRecord::Schema.define(version: 20161215175531) do
     t.datetime "updated_at"
   end
 
-  create_table "factions", force: true do |t|
+  create_table "factions", force: :cascade do |t|
     t.text     "name"
     t.string   "fleet"
     t.string   "territory"
@@ -35,17 +34,17 @@ ActiveRecord::Schema.define(version: 20161215175531) do
     t.datetime "updated_at"
   end
 
-  create_table "missions", force: true do |t|
+  create_table "missions", force: :cascade do |t|
     t.string   "number"
     t.text     "name"
     t.text     "brief"
     t.text     "resolution"
-    t.string   "status",     default: "hidden"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "projects", force: true do |t|
+  create_table "projects", force: :cascade do |t|
     t.text     "name"
     t.text     "proposer"
     t.text     "description"
@@ -57,7 +56,7 @@ ActiveRecord::Schema.define(version: 20161215175531) do
     t.integer  "mission_id"
   end
 
-  create_table "resources", force: true do |t|
+  create_table "resources", force: :cascade do |t|
     t.text     "name"
     t.text     "description"
     t.decimal  "quantity"

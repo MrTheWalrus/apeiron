@@ -1,4 +1,4 @@
-class Mission < ActiveRecord::Base
+class Mission < ApplicationRecord
   include VisibleScope
 
   STATUSES = ['hidden', 'available', 'active', 'complete']

@@ -1,9 +1,8 @@
 # Load the Rails application.
-require File.expand_path('../application', __FILE__)
+require_relative 'application'
 
 # Initialize the Rails application.
-Apeiron::Application.initialize!
-
-Apeiron::Application.configure do
+Rails.application.initialize!
+Rails.application.configure do
   config.crisis = false
 end

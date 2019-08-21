@@ -10,8 +10,12 @@
 
 def update_by_attribute(klass, attribute, data)
   data.each do |record_attrs|
-    item = klass.send("find_or_create_by_#{attribute}", record_attrs[attribute])
-    item.update(record_attrs)
+    record = klass.where(attribute => record_attrs[attribute]).first
+    if record
+      record.update(record_attrs)
+    else
+      klass.create(record_attrs)
+    end
   end
 end
 

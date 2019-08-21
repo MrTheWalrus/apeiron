@@ -1,3 +1,3 @@
-class Faction < ActiveRecord::Base
+class Faction < ApplicationRecord
 
 end

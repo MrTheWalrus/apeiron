@@ -1,4 +1,4 @@
-class Project < ActiveRecord::Base
+class Project < ApplicationRecord
   include VisibleScope
 
   STATUSES = ['hidden', 'pending', 'approved', 'complete', 'rejected', 'halted']

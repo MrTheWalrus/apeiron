@@ -1,4 +1,4 @@
-class Event < ActiveRecord::Base
+class Event < ApplicationRecord
   include VisibleScope
 
   STATUSES = ['hidden', 'available', 'ignored', 'active', 'resolved', 'failed']
